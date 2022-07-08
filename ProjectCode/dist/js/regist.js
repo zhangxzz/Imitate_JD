@@ -1,0 +1,2 @@
+"use strict";$(function(){var t=$("#usernameInput"),a=$("#passwordInput"),i=$("#birthDay");$("#submit").click(function(){var e=t.val(),s=a.val(),n=i.val(),o=$("input[name='sex']:checked").val(),e=(console.log(e,s,n,o),{username:e,password:s,sex:o,birthDay:n});pxmu.loading("注册中，请稍候..."),$.post("/lession01/regist",e,function(e){pxmu.closeload(),e.error?pxmu.failed("注册失败"):(pxmu.success("注册成功"),setTimeout(function(){location.href="./login.html"},1e3))})})});
+//# sourceMappingURL=regist.js.map

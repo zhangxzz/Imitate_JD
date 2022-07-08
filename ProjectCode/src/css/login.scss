@@ -1,0 +1,16 @@
+@import './common.scss';
+@import './header.scss';
+
+#loginBox {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+
+    .container {
+        width: 500px;
+        height: 300px;
+        margin: 50px auto;
+    }
+}

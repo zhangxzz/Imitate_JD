@@ -1,0 +1,40 @@
+@import './header.scss';
+@import './common.scss';
+
+
+#content {
+    .container {
+        .table {
+            tbody {
+                tr {
+                    td {
+                        img {
+                            max-height: 50px;
+                        }
+                        &:nth-child(2) {
+                            max-width: 200px;
+                            @include shenglue1;
+                        }
+                        .dropdown {
+                            width: 100px;
+
+                            .dropdown-toggle {
+                                width: 100%;
+                            }
+
+                            .dropdown-menu {
+                                width: 100%;
+                                min-width: 0;
+
+                                li {
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

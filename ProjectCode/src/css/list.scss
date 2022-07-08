@@ -1,0 +1,21 @@
+@import '../css/common.scss';
+@import '../css/header.scss';
+
+#content {
+    .container {
+        .row {
+            .card {
+                .card-body {
+                    .card-text {
+                        height: 48px;
+                        @include shenglue2;
+                    }
+                }
+            }
+            .activeA {
+                background: #e2231a;
+                color: white;
+            }
+        }
+    }
+}

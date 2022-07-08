@@ -1,0 +1,155 @@
+#header {
+    * {
+        // 与bootstrap的默认设置冲突了
+        // 此处清除一下此前设置的样式
+        box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+    }
+        
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+
+    .container {
+        width: 1000px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+
+        .left {
+            width: 150px;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .right {
+            width: 850px;
+            height: 100%;
+            display: flex;
+            position: relative;
+
+            .search-box {
+                width: 490px;
+                height: 40px;
+                border: 2px solid #e2231a;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: absolute;
+                left: 60px;
+                top: 20px;
+
+                input {
+                    outline: none;
+                    width: 410px;
+                    height: 40px;
+                    background-color: white;
+                    border: none;
+                    padding-left: 20px;
+                    color: #999;
+                    font-size: 12px;
+                    background: url(../imgs/icon/xiangji.png) no-repeat;
+                    background-size: 18px 18px;
+                    background-position: 400px;
+                }
+
+                button {
+                    width: 60px;
+                    height: 39px;
+                    background-color: #e2231a;
+                    border: none;
+
+                    &:hover {
+                        background-color: #b4160e;
+                    }
+
+                    img {
+                        width: 19px;
+                        height: 19px;
+                    }
+                }
+            }
+
+            .nav-list {
+                width: 750px;
+                height: 50px;
+                position: absolute;
+                left: 30px;
+                top: 80px;
+
+                li {
+                    list-style: none;
+                    width: 90px;
+                    height: 100%;
+                    float: left;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 50px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: rgb(85, 83, 83);
+
+                        &:hover {
+                            color: #e2231a;
+                        }
+                    }
+                }
+            }
+
+            .user-info {
+                width: 140px;
+                height: 40px;
+                position: absolute;
+                left: 625px;
+                top: 20px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                }
+
+                aside {
+                    width: 100px;
+                    height: 40px;
+                    position: absolute;
+                    left: 45px;
+
+                    p {
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #666;
+                    }
+
+                    div {
+                        a {
+                            float: left;
+                            text-decoration: none;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: rgb(33, 33, 33);
+
+                            &:hover {
+                                color: #e2231a;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

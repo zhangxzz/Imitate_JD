@@ -1,0 +1,69 @@
+@import '../css/common.scss';
+@import '../css/header.scss';
+
+#content {
+    width: 100%;
+
+    .container{
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+
+        .row {
+            height: 100%;
+
+            .col-4 {
+                position: relative;
+            }
+        }
+    }
+}
+
+.fdj {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    position: absolute;
+
+    >img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* img {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -ms-user-select: none;
+    } */
+
+    .box {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        /* border: 20px solid #ccc; */
+        background: rgba(22, 96, 13, .3);
+    }
+
+    .big {
+        display: none;
+        width: 457px;
+        height: 457px;
+        background: red;
+        position: absolute;
+        top: 0;
+        left: 101%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800px;
+            height: 800px;
+        }
+    }
+}
